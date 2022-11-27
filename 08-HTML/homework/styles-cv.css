@@ -1,0 +1,67 @@
+body{
+    background-image: url('assets/back2.webp');
+    color: #555
+}
+
+.container{
+    min-width: 600px;
+    max-width: 60%;
+    background-color: #fff;
+    margin: 10% auto;
+    border: solid 5px rgb(235, 235, 235);
+    display: flex;
+}
+
+h1{
+    color: rgb(149, 122, 0);
+}
+
+.sidebar{
+    padding: 10px;
+    width: 30%;
+    background-color: rgb(236, 236, 236)
+}
+#imgNoe{
+    width: 70%;
+    height: auto;
+    border-radius: 50%;
+    margin: 20px 15%;
+    border:rgb(149, 122, 0) solid 5px;
+}
+
+#titulo{
+    text-align: center;
+    margin: 0;
+}
+.sidebar h3{
+    text-align: center;
+    margin: 0
+} 
+.sidebar h2{
+    margin-top: 50px;
+}
+.sidebar p{
+    text-align: justify;
+}
+.content{
+    width: 70%;
+    padding: 10px 20px 10px  50px;
+}
+
+.content h3{
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+}
+
+.content span{
+    font-size: 12px;
+    color: #aaa;
+    margin-bottom: 10px;
+}
+
+.content p{
+    margin: 0;
+    margin-bottom: 30px;
+    text-align: justify;
+}

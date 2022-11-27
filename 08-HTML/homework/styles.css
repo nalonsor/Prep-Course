@@ -1,0 +1,40 @@
+body{
+    background-image: url('https://365psd.com/images/istock/previews/3221/32211526-seamless-geometric-pattern-with-cubes.jpg');
+}
+
+.container{
+    min-width: 600px;
+    max-width: 70%;
+    background-color: #fff;
+    margin: 0 auto;
+    padding: 10px;
+    border: solid 1px #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.divClass{
+    text-align: center;
+}
+
+h1{
+        color: blue;
+    }
+
+#thirdDiv{
+        background-color: beige;
+        height: 600px;
+        width: 500px;
+        padding: 50px;
+        border: solid 1px #ccc;
+    }
+
+#thirdDiv img{
+        width: 400px;
+    }
+
+#spanId{
+        font-size: 18px;
+        margin: 50px 50px;
+    }

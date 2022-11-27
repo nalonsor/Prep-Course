@@ -112,14 +112,12 @@ function multiplicarArgumentos() {
   // Si no se pasan argumentos devuelve 0. Si se pasa un argumento, simplemente devuélvelo
   // Escribe tu código aquí:
   let res = 0;
-  if(arguments.length){
-    for(var i=0; i<arguments.length; i++){
-      res = (arguments[i] !== 0 ) ? arguments[i] * res : res ;
-    }
-    return res;
-  }else{
-    return res;
-  } 
+  if(!arguments.length) return res;
+  res = 1;
+  for(var i=0; i<arguments.length; i++){
+    res = arguments[i] * res;
+  }
+  return res;
 }
 
 
@@ -169,9 +167,17 @@ function mesesDelAño(array) {
   // Tu código:
   let arr = [];
   // array.map(m => (m === "Enero" || m ===  "Marzo" || m === "Noviembre") && arr.push(m) );
+  /*
   if (array.includes("Enero")) { arr.push("Enero") } else { return "No se encontraron los meses pedidos" ; } 
   if (array.includes("Marzo")) { arr.push("Marzo") } else { return "No se encontraron los meses pedidos" ; } 
   if (array.includes("Noviembre")) { arr.push("Noviembre") } else { return "No se encontraron los meses pedidos" ; } 
+  */
+  for(let i=0; i<array.length; i++) {
+    if (!array.includes("Enero"))  return "No se encontraron los meses pedidos" ;  
+    if (!array.includes("Marzo"))  return "No se encontraron los meses pedidos" ;  
+    if (!array.includes("Noviembre"))  return "No se encontraron los meses pedidos" ;  
+    if(array[i] === "Enero" || array[i] === "Marzo" || array[i] === "Noviembre") arr.push(array[i]);
+  }
   return arr;
 }
 
